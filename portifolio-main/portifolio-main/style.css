@@ -1,0 +1,156 @@
+body {
+    font-family: Quicksand, Poppins;
+    font-size: 17px;
+    margin: 5;
+    padding: 5;
+    background-color: #fce4ec; /* Fundo rosa suave */
+    color: #ffffff;
+}
+
+header {
+    background-color: #d81b60; /* Rosa mais escuro */
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgb(255, 255, 255); /* Sombra suave */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave */
+    padding: 8px 12px; /* Espaçamento interno para botões */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+nav ul li a:hover {
+    background-color: #ff80ab; /* Cor ao passar o mouse */
+    color: #fff; /* Texto branco ao passar o mouse */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamanho maior */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as seções */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #f8bbd0; /* Rosa suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Efeito ao passar o mouse */
+    border: 1px solid #ff4081; /* Borda delicada rosa */
+    width: 90%; /* Largura adaptável */
+    max-width: 1200px; /* Largura máxima das seções */
+    text-align: center; /* Centraliza o texto dentro das seções */
+}
+
+section:hover {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+}
+
+.membro, .projeto {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f48fb1; /* Rosa médio */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ff4081; /* Borda delicada rosa */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #c2185b; /* Rosa forte */
+    color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.habilidade {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem em várias linhas */
+    justify-content: center; /* Centraliza os botões */
+    gap: 11px; /* Espaçamento entre os botões */
+}
+
+button {
+    background-color: #d81b60; /* Rosa escuro */
+    color: white;
+    border: none; /* Remove borda padrão */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #ff80ab; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Estilo dos links de contato */
+a {
+    color: #d81b60; /* Cor rosa */
+    text-decoration: none;
+    border-bottom: 1px dashed #d81b60; /* Linha pontilhada */
+}
+
+a:hover {
+    color: #ff80ab; /* Cor ao passar o mouse */
+    border-bottom: 1px solid #ff80ab; /* Linha sólida ao passar o mouse */
+}
+
+.membros {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço uniformemente */
+    flex-wrap: nowrap; /* Mantém todos em uma única linha */
+    max-width: 100%; /* Largura total do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.membro {
+    background-color: #f48fb1; /* Rosa médio */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 10px; /* Margem horizontal entre os membros */
+    flex: 1; /* Cada membro ocupará a mesma quantidade de espaço */
+    min-width: 300px; /* Largura mínima para cada membro */
+    max-width: 400px; /* Largura máxima para cada membro */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.projeto-conteudo {
+    display: flex;
+    align-items: center; /* Alinha a imagem e a descrição verticalmente */
+    margin-bottom: 20px; /* Espaçamento entre projetos */
+}
+
+.projeto-imagem {
+    width: 600px; /* Defina o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e a descrição */
+}
+
+.projeto-descricao {
+    flex: 1; /* Permite que a descrição ocupe o espaço restante */
+    text-align: justify; /* Justifica o texto */
+}
